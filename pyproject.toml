@@ -1,8 +1,13 @@
 [tool.poetry]
 name = "dupper"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["nixiesquid <audu817@gmail.com>"]
+license = "MIT"
+packages = [
+  { include = "./src/*.py" },
+  { include = "./src/**/*.py" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
