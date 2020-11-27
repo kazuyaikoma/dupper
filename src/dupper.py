@@ -1,4 +1,5 @@
 # coding:utf-8
+import os
 import fire
 
 
@@ -16,6 +17,10 @@ class Dupper(object):
         if not name:
             print('ファイル名を"--name"オプションで指定してください')
             print('e.g. dupper check --name="./example.txt"')
+            return
+
+        if not os.path.isfile(name):
+            print("{0}というファイルは存在しません".format(name))
             return
 
         records = self.get_records(name)
