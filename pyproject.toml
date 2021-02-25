@@ -4,10 +4,6 @@ version = "0.1.2"
 description = ""
 authors = ["nixiesquid <audu817@gmail.com>"]
 license = "MIT"
-# packages = [
-#   { include = "./src/*.py" },
-#   { include = "./src/**/*.py" },
-# ]
 
 [tool.poetry.dependencies]
 python = "^3.8"
